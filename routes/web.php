@@ -18,3 +18,12 @@ Route::get('/', function () {
 });
 
 Route::view('/anime', 'anime');
+
+// Route::get('/anime', function () {
+//     return view('anime', ['id' => '']);
+// });
+
+
+Route::get('/anime', function () {
+    return view('anime', ['id' => 'NGGIh']);
+});
