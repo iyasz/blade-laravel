@@ -7,6 +7,6 @@
     <title>Anime</title>
 </head>
 <body>
-    
+    <h1>hallo ! {{$id}}</h1>
 </body>
 </html>
