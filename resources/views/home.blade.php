@@ -63,8 +63,9 @@
     <br>
 
 
-    @for($i = 0; $i < 5; $i++) <p>$i</p>
-      @endfor
+    @foreach ($names as $name)
+    <p>{{$name}}</p>
+    @endforeach
 
   </div>
 

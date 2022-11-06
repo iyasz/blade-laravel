@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home', ['id' => 'anime']);
+    return view(
+        'home',
+        ['id' => 'anime'],
+        ['names' => ['iyasz', 'elaina', 'arisu']]
+    );
 });
 
 Route::redirect('/animes', '/anime');
