@@ -63,9 +63,22 @@
     <br>
 
 
-    @foreach ($names as $name)
-    <p>{{$name}}</p>
-    @endforeach
+    <table>
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Nama</th>
+        </tr>
+      </thead>
+      <tbody>
+        @foreach ($names as $name)
+        <tr>
+          <td>{{$loop->iteration}}</td>
+          <td>{{$name}}</td>
+        </tr>
+        @endforeach
+      </tbody>
+    </table>
 
   </div>
 
