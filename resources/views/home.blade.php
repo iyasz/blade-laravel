@@ -62,28 +62,66 @@
     @endif
     <br>
 
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <div class="card">
+          <div class="card-body">
 
-    <table>
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Nama</th>
-        </tr>
-      </thead>
-      <tbody>
-        @foreach ($names as $name)
-        <tr>
-          <td>{{$loop->iteration}}</td>
-          <td>{{$name}}</td>
-        </tr>
-        @endforeach
-      </tbody>
-    </table>
+
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                </tr>
+              </thead>
+              <tbody>
+                @foreach ($names as $name)
+                <tr>
+                  <td>{{$loop->iteration}}</td>
+                  <td>{{$name}}</td>
+                </tr>
+                @endforeach
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <h1 id="1">anime</h1>
+    <h2 id="2">anime</h2>
+    <h3 id="3">anime</h3>
+    <h4 id="4">anime</h4>
+    <h5 id="5">anime</h5>
+    <h6 id="6">anime</h6>
+
+    <button class="btn btn-primary" onclick="myFunction()" id="btn">TOMBOL MAGIC</button> -->
 
   </div>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- <script>
+    function myFunction() {
+      const btn = document.getElementById('btn')
+      const h1 = document.getElementById('1')
+      const h2 = document.getElementById('2')
+      const h3 = document.getElementById('3')
+      const h4 = document.getElementById('4')
+      const h5 = document.getElementById('5')
+      const h6 = document.getElementById('6')
+
+      h1.innerHTML = "<h6>IYASZ</h6>"
+      h2.innerHTML = "<h5>IYASZ</h5>"
+      h3.innerHTML = "<u><h4>IYASZ</h4></u>"
+      h4.innerHTML = "<strong><h3>IYASZ</h3></strong>"
+      h5.innerHTML = "<i><h2>IYASZ</h2></i>"
+      h6.innerHTML = "<b><h1>IYASZ</h1></b>"
+
+    }
+  </script> -->
 </body>
 
 </html>

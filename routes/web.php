@@ -24,4 +24,12 @@ Route::get('/', function () {
 Route::redirect('/animes', '/anime');
 
 
-Route::view('/anime', 'anime', ['id' => 'anime']);
+// Route::view('/anime', 'anime', ['id' => 'anime']);
+
+Route::get('/anime',  function () {
+    return view(
+        'anime',
+        ['id' => 'anime'],
+        ['nama' => ['iyasz', 'anime']]
+    );
+});
