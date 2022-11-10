@@ -1,7 +1,7 @@
 @extends('layouts.mainlayout')
 
 @section('title', 'home')
-
+@section('home_nav', 'active')
 
 
 @section('content')

@@ -31,10 +31,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="">Home</a>
+                        <a class="nav-link @yield('home_nav')" aria-current="page" href="@yield('go_home')">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/animes">Features</a>
+                        <a class="nav-link @yield('anime_nav')" href="/animes">anime</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>

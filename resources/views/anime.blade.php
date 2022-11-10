@@ -1,6 +1,8 @@
 @extends('layouts.mainlayout')
 
+@section('anime_nav', 'active')
 @section('title', 'anime')
+@section('go_home', '../')
 
 
 @section('content')
