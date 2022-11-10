@@ -37,10 +37,10 @@
                         <a class="nav-link @yield('anime_nav')" href="/animes">anime</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
+                        <a class="nav-link @yield('kontak_nav')" href="/kontak">Kontak</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#">Disabled</a>
+                        <a class="nav-link @yield('about_nav')" href="/about">About</a>
                     </li>
                 </ul>
             </div>

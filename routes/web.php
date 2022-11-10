@@ -33,3 +33,11 @@ Route::get('/anime',  function () {
         ['nama' => ['iyasz', 'anime']]
     );
 });
+
+Route::get('/kontak', function () {
+    return view('kontak', ['nama' => 'elaine']);
+});
+
+Route::get('/about', function () {
+    return view('about', ['nama' => 'elaine']);
+});
